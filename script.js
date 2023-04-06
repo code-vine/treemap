@@ -17,7 +17,8 @@ d3.json(movieDataUrl)
         return node2.value - node1.value;
     })
 
-    
+    let treeMap = d3.treemap().size([width,height]);
+    treeMap(hierarchy);
 
   })
   .catch((error) => console.log(error));

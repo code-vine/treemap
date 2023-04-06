@@ -2,4 +2,6 @@ const movieDataUrl = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tr
 
 let movieData
 
-const svg = d3.select("svg");
+const svg = d3.select("svg")
+              .attr("width", 1000)
+              .attr("height", 600);
